@@ -3,6 +3,7 @@ package com.college.converter;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -34,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
         buttonConvert.setOnClickListener( view ->  {
             convertCurrency(view);
         } );
+
+        Log.i("MainActivity", "onCreate() started");
+
+        Log.i("MainActivity", "onCreate() completed");
+
     }
 
     public void convertCurrency(View view) {
@@ -51,5 +57,9 @@ public class MainActivity extends AppCompatActivity {
 
             resultView.setText( resultFloat + " Euros" );
         }
+
+        Log.i("convertCurrency", "convertCurrency() started");
+
+        Log.i("convertCurrency", "convertCurrency() completed");
     }
 }
